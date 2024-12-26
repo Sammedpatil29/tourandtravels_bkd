@@ -22,8 +22,8 @@ app.post('/send-email', (req,res) => {
 
     const mailOptions = {
         from: 'sammed.patil29@gmail.com',
-        to: 'sammed.patil29@gmail.com',
-        subject: 'New Request Submission',
+        to: 'srimahaadevtoursntravels@gmail.com',
+        subject: 'New travel request from customer',
         text: `Name: ${name}\nContact: ${contact}\nPlace: ${place}\nMessage: ${message}`
     };
 
