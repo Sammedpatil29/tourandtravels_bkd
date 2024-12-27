@@ -12,8 +12,8 @@ app.use(cors())
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: 'sammed.patil29@gmail.com',
-        pass: 'pypg oecr cmbu jusr',
+        user: 'admin@smashthoughts.in',
+        pass: 'cluh hjqh zqix yknw',
     },
 });
 
@@ -21,7 +21,7 @@ app.post('/send-email', (req,res) => {
     const {name, contact, place , message} = req.body;
 
     const mailOptions = {
-        from: 'sammed.patil29@gmail.com',
+        from: 'admin@smashthoughts.in',
         to: 'srimahaadevtoursntravels@gmail.com',
         subject: 'New travel request from customer',
         text: `Name: ${name}\nContact: ${contact}\nPlace: ${place}\nMessage: ${message}`
